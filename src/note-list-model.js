@@ -8,7 +8,6 @@
 
   NoteList.prototype.addNote = function (text) {
     this.list.push(text);
-    return
   };
 
   NoteList.prototype.seeList = function () {

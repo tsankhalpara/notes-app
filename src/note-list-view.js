@@ -1,12 +1,16 @@
 (function(exports) {
-  function NoteListView() {
+  function NoteListView(notelist = new NoteList()) {
+    this.notelist = notelist;
+  };
 
+  NoteListView.prototype.printHTML = function () {
+    var html = "<ul>"
+    this.notelist.seeList().forEach(function(note) {
+      html += "<li><div>" + note + "</div></li>"
+    })
+    html += "</ul>"
+    return html
   };
 
   exports.NoteListView = NoteListView;
 })(this);
-
-  NoteListView.prototype.printHTML = function () {
-    return "<ul><li><div>1</div></li><li><div>2</div></li></ul>"
-// make function work and link html string with notes from list
-  };
