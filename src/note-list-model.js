@@ -3,6 +3,9 @@
     this.list = [];
   };
 
+  exports.NoteList = NoteList;
+})(this);
+
   NoteList.prototype.addNote = function (text) {
     this.list.push(text);
     return
@@ -11,6 +14,3 @@
   NoteList.prototype.seeList = function () {
     return this.list;
   };
-
-  exports.NoteList = NoteList;
-})(this);
