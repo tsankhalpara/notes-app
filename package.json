@@ -1,0 +1,26 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "notes app",
+  "main": "note-controller.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tsankhalpara/notes-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsankhalpara/notes-app/issues"
+  },
+  "homepage": "https://github.com/tsankhalpara/notes-app#readme"
+}
